@@ -1,0 +1,62 @@
+free -m
+ls
+history
+> .bash_history
+script
+ls
+rm typescript 
+ls
+service salt-minion stop
+ls
+cd /etc/sysconfig/network-scripts/
+ls
+vi ifcfg-eth0 
+cd /etc/salt/
+ls
+vi minion_id 
+cd
+history
+> .bash_history 
+halt
+cat /etc/salt/minion_id 
+rm /etc/salt/minion_id 
+rm /etc/hostname 
+ls
+cd /etc/sysconfig/
+ls
+cat network
+cat selinux 
+halt
+ls
+exit
+ls
+cd /etc/salt/
+ls
+cat grains 
+yum history
+rpm -qa | grep mate
+ls
+cat minion_id 
+rm minion_id 
+halt
+yum update
+cd /etc/salt/
+ls
+cat minion_id 
+rm minion_id 
+cd /etc/sysconfig/network-scripts/
+ls
+vi ifcfg-eth0 
+halt
+cd /etc/sysconfig/network-scripts/
+ls
+> ifcfg-eth0 
+cd ..
+nmtui
+ls
+cd network-scripts/
+ls
+cat ifcfg-eth0 
+vi ifcfg-eth0 
+vi /etc/salt/minion_id 
+halt
