@@ -1,0 +1,56 @@
+Here I list some useful code sections with links to where this code came from.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Solution to often encountered problems:
+
+http://google.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Making sure input has been supplied; otherwise showing script usage
+
+if [ -z "$1" ]
+  then
+    echo "Usage:"
+    echo "${0##*/} bob"         # Provide valid usage example.
+    exit 123			# Arbitrary exit code; pick your own.
+  else
+    :                           # Do nothing, move on with the script below.
+fi
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# case usage with a mixture of upper and lower case letters.
+# Credits: http://stackoverflow.com/a/3232082
+
+read -r -p "Would you like to restart the script? [y/N] " RESPONSE
+case $RESPONSE in
+  ([yY][eE][sS]|[yY])
+    # Restarting the script without creating a subshell;
+    # https://www.gnu.org/software/bash/manual/bashref.html#index-exec
+    exec $0
+    ;;
+  *)
+    echo
+    echo "It was fun! Thanks!!!"
+    echo
+    ;;
+esac
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Getting the last non-empty line from the input file into a variable;
+# Credits: http://stackoverflow.com/a/2639060
+
+INPUT=$(tac $1|grep --max-count=1 .)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
