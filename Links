@@ -1,0 +1,5 @@
+http://superuser.com/questions/272925/ubuntu-behaves-as-if-i-have-two-clipboards/272934#272934
+
+X actually has three clipboards. Highlighting text moves it into one clipboard (PRIMARY),
+performing a copy operation copies it to a second (CLIPBOARD), and the third clipboard [SECONDARY]
+is almost never used.
