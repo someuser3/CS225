@@ -1,4 +1,7 @@
-Here I list some useful code sections with links to where this code came from.
+#!/bin/bash
+exit
+
+# Here I list some useful code sections with links to where this code came from.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
